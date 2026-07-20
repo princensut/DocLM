@@ -1,0 +1,24 @@
+<<<<<<< HEAD
+
+client/.env.example/
+client/src/styles/pass.txt
+server/.env
+ARCHITECTURE.md
+EXCECPTION_HANDLING_AND_SECURITY.md
+FRONTEND.md
+PRD.md
+server/.env
+client/node_modules/
+=======
+
+client/.env.example/
+client/src/styles/pass.txt
+server/.env
+ARCHITECTURE.md
+EXCECPTION_HANDLING_AND_SECURITY.md
+FRONTEND.md
+PRD.md
+server/.env
+client/node_modules/
+>>>>>>> 047c59df6966962f252a2e2cf19d79dfa6c7b679
+server/node_modules/

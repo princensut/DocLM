@@ -1,0 +1,31 @@
+/**
+ * DARK THEME — inspired by Framer's marketing site: a near-black
+ * canvas, glassmorphic surfaces, a vivid purple-blue gradient accent,
+ * large soft radii, and bold display type used with confident scale.
+ */
+[data-theme="dark"] {
+  --color-bg: #08080c;
+  --color-bg-elevated: #101018;
+  --color-surface: rgba(255, 255, 255, 0.04);
+  --color-surface-hover: rgba(255, 255, 255, 0.08);
+  --color-border: rgba(255, 255, 255, 0.09);
+  --color-text: #f5f5fa;
+  --color-text-muted: #9797a8;
+  --color-accent: #7c5cfc;
+  --color-accent-hover: #6a4ce0;
+  --color-accent-contrast: #ffffff;
+  --color-danger: #ff6b6b;
+  --color-success: #4ade80;
+
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 50px rgba(124, 92, 252, 0.35);
+}
