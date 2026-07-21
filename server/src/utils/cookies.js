@@ -4,8 +4,8 @@ const env = require("../config/env");
 // See EXCEPTION_HANDLING_AND_SECURITY.md §1.2.
 const baseCookieOptions = {
   httpOnly: true,
-  secure: env.isProd,
-  sameSite: "lax",
+  secure: true,
+  sameSite: "none",
   path: "/",
 };
 
