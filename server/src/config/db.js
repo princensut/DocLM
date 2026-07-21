@@ -3,6 +3,8 @@ const env = require("./env");
 const logger = require("../utils/logger");
 
 async function connectDB() {
+  if (mongoose.connection.readyState === 1) return;
+
   mongoose.set("strictQuery", true);
 
   try {
@@ -10,8 +12,10 @@ async function connectDB() {
     logger.info("MongoDB Atlas connected");
   } catch (err) {
     logger.error({ err }, "MongoDB connection failed");
-    // Fail fast: the app is useless without a DB connection.
-    process.exit(1);
+    if (require.main === module || process.env.VERCEL !== "1") {
+      process.exit(1);
+    }
+    throw err;
   }
 
   mongoose.connection.on("disconnected", () => {
